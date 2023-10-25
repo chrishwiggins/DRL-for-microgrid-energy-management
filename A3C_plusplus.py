@@ -260,7 +260,10 @@ class Agent:
                 a = brain.predict_p_vote(s)
                 p= np.random.dirichlet(np.ones(self.num_actions), size=1)
                 print(a)
-                return list(a),p
+                # OLD: return list(a),p
+                # NEW:
+                return a, p
+
             p = brain.predict_p(s)
         # In the original version, the action selection follows a stochasic policy as follows:
         # a = np.random.choice(NUM_ACTIONS, p=p.reshape(NUM_ACTIONS,))
