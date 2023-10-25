@@ -20,3 +20,16 @@ Contributions to this repository are welcome! If you find a bug or have an idea 
 
 ## License
 This code is released under the MIT License. More information about this project can be found at: https://doi.org/10.1016/j.segan.2020.100413
+
+# 2023-10-25 chris.wiggins@gmail.com additions
+
+this code had 2 small bugs. i debugged them.
+
+you can run without the conda stuff. just:
+
+#<code|
+gh repo clone chrishwiggins/DRL-for-microgrid-energy-management
+cd DRL-for-microgrid-energy-management/
+py3 A3C_plusplus.py --train
+py3 A3C_plusplus.py --test
+#|code>
