@@ -532,7 +532,12 @@ class MicroGridEnv(gym.Env):
             ax.yaxis.grid(True)
 
             ax.set_ylabel("TCLs state of charge %")
-            ax.boxplot(SOCS_RENDER, positions=range(24))
+
+            # NEW: diagnostic
+            # print("Length of SOCS_RENDER:", len(SOCS_RENDER))
+            ax.boxplot(SOCS_RENDER, positions=range(len(SOCS_RENDER)))
+            # OLD: ax.boxplot(SOCS_RENDER, positions=range(24))
+
 
             ax1 = ax.twinx()
             ax1.set_ylabel("Temperatures °C")
