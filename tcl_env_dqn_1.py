@@ -557,7 +557,7 @@ class MicroGridEnv(gym.Env):
             ax.bar(x=np.array(np.arange(self.iterations)), height=TCL_CONSUMPTION_RENDER, width=0.2)
             plt.xticks( np.array(np.arange(self.iterations)) )
             plt.title("Energy allocated to and consumed by TCLs and energy generated")
-            plt.legend(['Energy generated','Energy allocated for TCLs', 'Energy consumed by TCLs'])
+            plt.legend(['Energy generated','Energy allocated for TCLs', 'aEnergy consumed by TCLs'])
             plt.xlabel("Time (h)")
             plt.ylabel("kW")
             plt.show()
